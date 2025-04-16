@@ -17,3 +17,17 @@
 * diese Anleitung zur Hilfe (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date?retiredLocale=de)
 * oder arbeite mit KI.
 * */
+
+let alter = prompt("Wie alt bist du?");
+
+checkAlter(alter);
+
+function checkAlter(alter) {
+    if (alter < 16) {
+        console.log("Du bist zu jung um Alkohol zu kaufen.");
+    } else if (alter < 18) { 
+        console.log("Du bist zu jung für Schnaps.");
+    } else {
+        console.log("Yeah, volljährig - kauf was du willst.");
+    }
+}
